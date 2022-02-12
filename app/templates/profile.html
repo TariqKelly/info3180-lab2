@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="col-md-8 mx-auto" id="head">
+        <div id="avatar"><img src="{{ url_for("static", filename="profile-img.jpg") }}" alt=""></div>
+        <div class="col-md-8 mx-auto" id="user-info">
+            <h1>Tariq Kelly</h1>
+            <p>@tkelly</p>
+            <p>Manchester, Jamaica</p>
+            <p>{{ date_joined }}</p>
+        </div>
+    </div>
+    <div id="content">        <p id="bio">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis sem eu hendrerit ullamcorper. Nunc tempus eleifend consequat. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla finibus placerat vulputate.
+        </p>
+        <div id="user-data">
+            <div id="posts">
+                <p class="number">7</p>
+                <p class="label">Posts</p>
+            </div>
+            <div id="following">
+                <p class="number">100</p>
+                <p class="label">Following</p>
+            </div>
+            <div id="followers">
+                <p class="number">250</p>
+                <p class="label">Followers</p>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+{% endblock %}
